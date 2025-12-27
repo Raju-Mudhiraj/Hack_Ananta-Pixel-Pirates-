@@ -9,9 +9,7 @@ import {
 /* ============================
    API KEY
 ============================ */
-const apiKey =
-  import.meta.env.VITE_GEMINI_API_KEY ||
-  import.meta.env.VITE_API_KEY;
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
 if (!apiKey) {
   throw new Error("Missing Gemini API Key");
